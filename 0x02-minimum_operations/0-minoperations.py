@@ -12,11 +12,11 @@
 
 
 def minOperations(n):
-    newOpe = 0
+    nOpe = 0
     minOpe = 2
     while n > 1:
         while n % minOpe == 0:
             nOpe += minOpe
             n /= minOpe
         minOpe += 1
-    return newOpe
+    return nOpe
